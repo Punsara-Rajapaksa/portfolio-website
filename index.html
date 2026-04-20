@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Punsara Rajapaksa, a Full-Stack Developer specializing in AI-powered applications."
+    />
+    <meta property="og:title" content="Punsara Rajapaksa | Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack developer building practical AI-powered products with clean design and production-ready architecture."
+    />
+    <meta property="og:type" content="website" />
+    <title>Punsara Rajapaksa | AI Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="mesh mesh-one" aria-hidden="true"></div>
+    <div class="mesh mesh-two" aria-hidden="true"></div>
+    <div class="mesh mesh-three" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-track">
+          <span class="theme-icon sun" aria-hidden="true">☀</span>
+          <span class="theme-icon moon" aria-hidden="true">☾</span>
+          <span class="theme-thumb"></span>
+        </span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="home">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Full-Stack Developer specializing in AI-powered applications</p>
+            <h1 class="hero-name split-hover">Punsara Rajapaksa</h1>
+            <h2 class="hero-role">
+              I build and deploy intelligent full-stack products with practical, production-first
+              engineering.
+            </h2>
+            <p class="hero-summary" id="dynamicGreeting">
+              I am a full-stack developer focused on AI-powered applications. I design efficient,
+              reliable systems that blend clean interfaces with intelligent functionality for real
+              users.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary magnetic" href="#projects">Explore Projects</a>
+              <a class="btn btn-ghost magnetic" href="assets/Punsara-Rajapaksa-Resume.pdf" download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero-visual-wrap">
+            <div class="hero-cube" aria-label="Tech focus cards">
+              <article class="cube-card tilt-card glossy-card magnetic">
+                <p>Core Focus</p>
+                <h3>AI Product Engineering</h3>
+                <span>LLM integration, API orchestration, and production deployment</span>
+              </article>
+              <article class="cube-card tilt-card glossy-card magnetic">
+                <p>Stack</p>
+                <h3>FastAPI + React + PostgreSQL</h3>
+                <span>From backend architecture to polished frontend delivery</span>
+              </article>
+              <article class="cube-card tilt-card glossy-card magnetic">
+                <p>Delivery</p>
+                <h3>Clean UX + Reliable Systems</h3>
+                <span>Shipping practical products with clear interfaces and maintainable code.</span>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="about reveal" id="about">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2 class="split-hover">Engineering with clarity, speed, and measurable outcomes</h2>
+        </div>
+        <p>
+          I work across backend architecture, frontend experience, and intelligent automation to
+          ship complete products. My goal is to turn complex workflows into simple, dependable tools
+          that teams can use confidently.
+        </p>
+      </section>
+
+      <section class="projects reveal" id="projects">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2 class="split-hover">Selected work</h2>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card tilt-card glossy-card">
+            <div class="project-title-row">
+              <h3>Clovio</h3>
+              <span class="project-pill">AI Collaboration Platform</span>
+            </div>
+            <p>
+              Clovio is an intelligent collaboration platform that transforms academic group
+              projects by ensuring fairness, efficiency, and accountability. Using AI, it breaks
+              down project descriptions into milestones and tasks, assigns work based on skills, and
+              provides fairness scores with live progress visibility.
+            </p>
+            <p class="project-role">
+              Contribution: Built the backend and AI implementation, handled frontend and backend
+              deployment, and developed progress prediction and fairness scoring features.
+            </p>
+
+            <div class="media-grid" aria-label="Clovio screenshots and demo">
+              <img
+                src="assets/projects/clovio/screenshot-1.png"
+                alt="Clovio screenshot one"
+                loading="lazy"
+              />
+              <img
+                src="assets/projects/clovio/screenshot-2.png"
+                alt="Clovio screenshot two"
+                loading="lazy"
+              />
+              <iframe
+                src="https://www.youtube.com/embed/Jr4n-HVDjDY?rel=0&modestbranding=1&playsinline=1"
+                title="Clovio demo video"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="stack-grid" aria-label="Clovio stack">
+              <span><strong>Backend:</strong> FastAPI, SQLAlchemy, Alembic, PostgreSQL</span>
+              <span><strong>Frontend:</strong> React, TypeScript, Tailwind CSS, React Router, Axios</span>
+              <span><strong>AI:</strong> OpenRouter primary, Groq (Llama 3.3) fallback</span>
+              <span><strong>Auth:</strong> JWT (python-jose), bcrypt</span>
+              <span><strong>DevOps:</strong> Railway/Render, Vercel, GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a class="magnetic" href="https://clovio.app" target="_blank" rel="noreferrer">Live Demo</a>
+              <a
+                class="magnetic"
+                href="https://github.com/SDGP-Clovio/clovio-platform"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card tilt-card glossy-card">
+            <div class="project-title-row">
+              <h3>BuildWith AI</h3>
+              <span class="project-pill">Prompt-to-Website Generator</span>
+            </div>
+            <p>
+              BuildWith AI turns natural language prompts into live HTML, CSS, and JavaScript.
+              Users can describe UI changes and instantly preview generated results in real time.
+            </p>
+            <p class="project-role">Contribution: Built the entire application end-to-end.</p>
+
+            <div class="media-grid" aria-label="BuildWith AI screenshots and demo">
+              <img
+                src="assets/projects/buildwith-ai/screenshot-1.png"
+                alt="BuildWith AI screenshot one"
+                loading="lazy"
+              />
+              <img
+                src="assets/projects/buildwith-ai/screenshot-2.png"
+                alt="BuildWith AI screenshot two"
+                loading="lazy"
+              />
+              <img
+                src="assets/projects/buildwith-ai/screenshot-3.png"
+                alt="BuildWith AI screenshot three"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="stack-grid" aria-label="BuildWith AI stack">
+              <span><strong>Frontend:</strong> React 19, TypeScript, Vite, Lucide React, custom CSS</span>
+              <span><strong>Backend:</strong> Vercel Serverless Functions, Node.js</span>
+              <span><strong>AI Providers:</strong> OpenRouter primary, Groq fallback</span>
+              <span><strong>Deployment:</strong> Vercel</span>
+            </div>
+            <div class="project-links">
+              <a class="magnetic" href="https://buildwith-ai-ivory.vercel.app/" target="_blank" rel="noreferrer"
+                >Live Demo</a
+              >
+              <a
+                class="magnetic"
+                href="https://github.com/Punsara-Rajapaksa/buildwith-ai"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head project-subhead">
+          <h3>More Projects</h3>
+        </div>
+        <div class="mini-project-grid">
+          <article class="mini-project glossy-card magnetic">
+            <h4>Java Socket GUI Chat</h4>
+            <p>A multi-client chat system built with Java Sockets and Swing.</p>
+            <a class="magnetic" href="https://github.com/Punsara-Rajapaksa/java-socket-gui-chat" target="_blank" rel="noreferrer"
+              >View Repository</a
+            >
+          </article>
+          <article class="mini-project glossy-card magnetic">
+            <h4>Customer Churn Prediction Model</h4>
+            <p>Machine learning model for churn prediction using IBM Telco dataset.</p>
+            <a
+              class="magnetic"
+              href="https://github.com/Punsara-Rajapaksa/customer-churn-prediction-model"
+              target="_blank"
+              rel="noreferrer"
+              >View Repository</a
+            >
+          </article>
+          <article class="mini-project glossy-card magnetic">
+            <h4>Diabetes Prediction Model</h4>
+            <p>Logistic regression model for diabetes outcome prediction.</p>
+            <a
+              class="magnetic"
+              href="https://github.com/Punsara-Rajapaksa/diabetes-prediction-model"
+              target="_blank"
+              rel="noreferrer"
+              >View Repository</a
+            >
+          </article>
+          <article class="mini-project glossy-card magnetic">
+            <h4>Network Intrusion Detection Model</h4>
+            <p>Traffic classification model for detecting intrusions versus normal activity.</p>
+            <a
+              class="magnetic"
+              href="https://github.com/Punsara-Rajapaksa/network-intrusion-detection-model"
+              target="_blank"
+              rel="noreferrer"
+              >View Repository</a
+            >
+          </article>
+        </div>
+
+        <p class="project-note">
+          More projects are available on
+          <a class="magnetic" href="https://github.com/Punsara-Rajapaksa" target="_blank" rel="noreferrer">GitHub</a>
+          and
+          <a class="magnetic" href="https://www.linkedin.com/in/punsara-rajapaksa/" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >.
+        </p>
+      </section>
+
+      <section class="skills reveal" id="skills">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2 class="split-hover">Tools and technologies</h2>
+        </div>
+
+        <div class="skills-grid horizontal-panel" id="skillsPanel">
+          <article>
+            <h3>Languages</h3>
+            <p>Python, TypeScript, JavaScript, Java, HTML, CSS</p>
+          </article>
+          <article>
+            <h3>Frameworks</h3>
+            <p>FastAPI, React, Vite, Tailwind CSS, SQLAlchemy</p>
+          </article>
+          <article>
+            <h3>AI and Data</h3>
+            <p>LLM integration, API orchestration, prompt workflows, PostgreSQL, ML model deployment</p>
+          </article>
+          <article>
+            <h3>Deployment and DevOps</h3>
+            <p>Vercel, Railway, Render, GitHub Actions, CI/CD pipelines</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience reveal" id="experience">
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2 class="split-hover">What I focus on</h2>
+        </div>
+        <div class="experience-list">
+          <article>
+            <h3>Full-Stack AI Product Development</h3>
+            <p>
+              Design and build complete applications from architecture to deployment, with AI-driven
+              features integrated into real user workflows.
+            </p>
+          </article>
+          <article>
+            <h3>Backend and Intelligent Systems</h3>
+            <p>
+              Build scalable APIs, authentication layers, and analytics features including prediction
+              logic and fairness-aware scoring.
+            </p>
+          </article>
+          <article>
+            <h3>Frontend Delivery and UX Clarity</h3>
+            <p>
+              Create responsive, clean, and practical interfaces focused on usability and transparent
+              product behavior.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact reveal" id="contact">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2 class="split-hover">Let us build something meaningful</h2>
+        </div>
+        <p class="contact-copy">
+          Open to product collaborations and full-stack opportunities where intelligent automation
+          and clean software architecture matter.
+        </p>
+        <div class="contact-links">
+          <button class="email-copy magnetic" id="copyEmailBtn" data-email="punsararajapaksa@gmail.com">
+            punsararajapaksa@gmail.com
+            <span class="copy-toast" id="copyToast" aria-live="polite">Copied</span>
+          </button>
+          <a class="magnetic" href="https://github.com/Punsara-Rajapaksa" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="magnetic" href="https://www.linkedin.com/in/punsara-rajapaksa/" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="currentYear"></span> Punsara Rajapaksa</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
+
+    <dialog class="media-lightbox" id="mediaLightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close media viewer">Close</button>
+      <div class="lightbox-body" id="lightboxBody"></div>
+    </dialog>
+
+    <div class="ui-toast" id="uiToast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
