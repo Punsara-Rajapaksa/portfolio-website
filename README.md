@@ -11,6 +11,8 @@ Includes:
 - Custom cursor, spotlight effect, and magnetic hover interactions
 - Offline caching via service worker
 
+Deployed live at: https://portfolio-website-fb3h.vercel.app/
+
 ## Current setup
 
 - Home, About, Projects, Skills, Experience, Contact sections
